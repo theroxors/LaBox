@@ -1,0 +1,20 @@
+Patrons de Compositions utilisés :
+I. Composite
+II. Factory
+III. Singleton
+IV. Observer
+
+
+
+I. Composite
+Le patron de conception « Composite » permet de gérer plusieurs objets dont quelques opérations sont identiques.
+Dans le cas de l’application LaBox, Les objets que le Composite gérera sont : Repertoire et Document. Pour cela, les deux classes Repertoire et Document implémenteront l’interface Element. Element mettra en oeuvre le comportement par défaut des deux classes et définira la composition pour l’élément ayant des enfants (Repertoire).
+II. Factory
+Le patron de composition « Factory » défini un endroit où des objets seront créé. Son utilisation revient à isoler la création des objets de leur utilisation.
+La classe CreateurElement, qui implémente l’interface ElementFactory, aura une seule instanciation (singleton) qui s’occupera de la création des différents éléments qu’un utilisateur va créer.
+III. Singleton
+Le patron de composition « Singleton » permet de définir un objet unique qui s’occupera de l’instanciation d’une classe.
+L’utilisation du singleton dans l’application LaBox concerne la création des utilisateurs du système. Il aura donc une liste de tous les utilisateurs qu’il va remplir à chaque inscription. Une autre fonctionnalité, celle de l’authentification, a été ajouté au singleton pour vérifier l’existence d’un utilisateur dans cette liste (et comparer les mots de passe).
+IV. Observer
+Le patron composite Observer permet d’avoir un observateur qui va notifier un observé à chaque événement prédéfini.
+Dans l’application LaBox, tous les utilisateurs ayant accès à un répertoire (Observé) seront notifiés par l’observateur (ModifNotification) dès que l’administrateur du répertoire ajoute un document dessus.
