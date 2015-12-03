@@ -18,3 +18,5 @@ L’invité ne peut pas supprimer les documents créés par un autre utilisateur
 notifiés par e-mail (Figure 2).
 - Chaque invité peut alors consulter et modifier librement le fichier tout nouvellement
 déposé.
+
+Réalisé par : Youssef Bayed
